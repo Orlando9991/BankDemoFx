@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pinAnchorPane" disable="true" minHeight="248.0" minWidth="458.0" visible="false" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pt.rumos.window.pin.PinWindowController">
+   <children>
+      <Pane prefHeight="252.0" prefWidth="462.0" style="-fx-background-color: #1124FF;">
+         <children>
+            <Button fx:id="buttonDigit_4" layoutX="157.0" layoutY="120.0" mnemonicParsing="false" onAction="#buttonFourPressed" text="4" />
+            <Button fx:id="buttonDigit_5" layoutX="220.0" layoutY="120.0" mnemonicParsing="false" onAction="#buttonFivePressed" text="5" />
+            <Button fx:id="buttonDigit_6" layoutX="283.0" layoutY="120.0" mnemonicParsing="false" onAction="#buttonSixPressed" text="6" />
+            <Button fx:id="buttonDigit_7" layoutX="157.0" layoutY="160.0" mnemonicParsing="false" onAction="#buttonSevenPressed" text="7" />
+            <Button fx:id="buttonDigit_8" layoutX="220.0" layoutY="160.0" mnemonicParsing="false" onAction="#buttonEightPressed" text="8" />
+            <Button fx:id="buttonDigit_9" layoutX="283.0" layoutY="160.0" mnemonicParsing="false" onAction="#buttonNinePressed" text="9" />
+            <Button fx:id="buttonDigit_1" layoutX="157.0" layoutY="80.0" mnemonicParsing="false" onAction="#buttonOnePressed" text="1" />
+            <Button fx:id="buttonDigit_2" layoutX="220.0" layoutY="80.0" mnemonicParsing="false" onAction="#buttonTwoPressed" text="2" />
+            <Button fx:id="buttonDigit_3" layoutX="283.0" layoutY="80.0" mnemonicParsing="false" onAction="#buttonThreePressed" text="3" />
+            <Button fx:id="buttonDigit_0" layoutX="220.0" layoutY="200.0" mnemonicParsing="false" onAction="#buttonZeroPressed" text="0" />
+            <PasswordField fx:id="passwordField" editable="false" layoutX="157.0" layoutY="40.0" />
+            <Button fx:id="buttonPinConfirm" layoutX="272.0" layoutY="200.0" mnemonicParsing="false" onAction="#confirmButton" prefHeight="25.0" prefWidth="35.0" style="-fx-background-color: #00FF00;" text="Ok">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonClearScreen" cancelButton="true" layoutX="156.0" layoutY="200.0" mnemonicParsing="false" onAction="#clearInputs" style="-fx-background-color: #F22200;" text="Clear">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="201.0" layoutY="14.0" text="INSERT PIN" textFill="#d1f850" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

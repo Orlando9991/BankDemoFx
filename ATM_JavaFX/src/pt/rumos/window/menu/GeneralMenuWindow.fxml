@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="generalMenuAnchorPane" disable="true" minHeight="252.0" minWidth="462.0" visible="false" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pt.rumos.window.menu.GeneralMenuWindowController">
+   <children>
+      <Pane prefHeight="252.0" prefWidth="462.0" style="-fx-background-color: #1124FF;">
+         <children>
+            <Polygon fill="DODGERBLUE" layoutX="212.0" layoutY="84.0" points="-89.0, 143.0, 169.0, 68.0, -13.0, -70.0" stroke="BLACK" strokeType="INSIDE" />
+            <Button fx:id="withdrawButton" layoutX="177.0" layoutY="110.0" mnemonicParsing="false" onAction="#withdrawWindow" prefHeight="32.0" prefWidth="109.0" style="-fx-background-color: #AAFFAA;" text="Withdrawl">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Button fx:id="managementButton" layoutX="177.0" layoutY="60.0" mnemonicParsing="false" onAction="#managementButtonClick" prefHeight="32.0" prefWidth="109.0" style="-fx-background-color: #AAAFFF;" text="Management">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Button fx:id="transferButton" layoutX="177.0" layoutY="158.0" mnemonicParsing="false" onAction="#transferWindow" prefHeight="32.0" prefWidth="109.0" style="-fx-background-color: #AAFF00;" text="Transfer">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

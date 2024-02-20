@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="managementAnchorPane" minHeight="252.0" minWidth="462.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pt.rumos.window.menu.management.ManagementWindowController">
+   <children>
+      <Pane prefHeight="252.0" prefWidth="462.0" style="-fx-background-color: #1124FF;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="182.0" layoutX="138.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="187.0" />
+            <Button layoutX="186.0" layoutY="157.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" text="Card Cancel" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="184.0" layoutY="114.0" mnemonicParsing="false" text="Request Card">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="182.0" layoutY="28.0" mnemonicParsing="false" text="Balance status">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="changePinButton" layoutX="190.0" layoutY="71.0" mnemonicParsing="false" onAction="#changePin" text="Change Pin">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="goBackButton" layoutX="200.0" layoutY="213.0" mnemonicParsing="false" onAction="#goBackMenu" style="-fx-background-color: #FF7700;" text="Go Back">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
